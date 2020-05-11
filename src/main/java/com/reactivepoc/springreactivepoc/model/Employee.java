@@ -3,6 +3,7 @@ package com.reactivepoc.springreactivepoc.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "employee")
+@ToString
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
