@@ -1,11 +1,12 @@
 package com.reactivepoc.springreactivepoc.service;
 
+import com.reactivepoc.springreactivepoc.model.Comments;
 import com.reactivepoc.springreactivepoc.model.Employee;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 public interface IEmployeeService {
-    List<Employee> getAllEmployees();
-    String saveEmployee(Employee employee);
-
+    Flux<Employee> getAllEmployees();
+    Mono<Employee> saveEmployee(Employee employee);
+    Flux<Comments> getAllExternalEmployeesComments();
 }

@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeResponse {
-    private String status;
-    private List<Employee> data;
+public class Comments {
+    private String postId;
+    private String id;
+    private String name;
+    private String email;
+    private String body;
 }

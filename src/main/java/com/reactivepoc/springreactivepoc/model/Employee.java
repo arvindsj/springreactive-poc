@@ -1,22 +1,18 @@
 package com.reactivepoc.springreactivepoc.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
-
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
 
 @Data
-@AllArgsConstructor
+@Builder
 @NoArgsConstructor
-@Entity
-@Table(name = "employee")
-@ToString
+@AllArgsConstructor
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    private Long id;
     private String employee_name;
     private String employee_salary;
     private String employee_age;
