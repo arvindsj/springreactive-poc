@@ -17,3 +17,5 @@ services:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_USER=admin
       - POSTGRES_DB=centraldb
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
