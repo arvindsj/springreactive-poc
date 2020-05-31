@@ -11,7 +11,7 @@ You can find the application.properties under <code>springreactive-poc/src/main/
  <b><code>`docker exec -it postgres_db psql centraldb -U admin -W admin`</code></b>
  5) It will ask for the password. Type "admin" as password.
  6) Now you will be inside the Postgres container's command prompt.
- 6.1) Check the tables <code>
+ 6.1) Check the tables
  ~~~~
     select * from employee;
     select * from comments;
